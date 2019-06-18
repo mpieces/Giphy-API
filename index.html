@@ -16,18 +16,39 @@
 
 </head>
 <body>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Giphy Animals</h1>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                <div id="buttons-area" class="btn-group-vertical">
+                        
+                </div>
+                <form class="form-inline">
+                        <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" id="topic-input" class="form-control" placeholder="New animal">
+                        </div>
+                        <!-- Button that triggers new topic to be added -->
+                        
+                        <input id="add-topic" class="btn btn-primary mb-2" type="submit" value="Add an Animal">
+                        </form>
+              </div>
+              <div class="col-md-8">
+                 <div id="gif-area"></div>
+                    <!-- float right -->
+              </div>
+          </div>
+          
 
-    <div id="buttons-area"></div>
-    
-    <form id="topic-form">
-        <input type="text" id="topic-input" placeholder="New topic">
-        <!-- Button that triggers new topic to be added -->
-        <input id="add-topic" type="submit" value="Add a Topic">
-    </form>
+       
 
-    <div id="gif-area"></div>
+   
 
-
+    </div>
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>
