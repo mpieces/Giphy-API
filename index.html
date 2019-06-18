@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giphy API</title>
 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <!-- Custom stylesheet -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
+
 <body>
     <div class="jumbotron text-center">
         <h1 class="display-4">Giphy Animals</h1>
+        <p>Click on a category or add a new one. Then click on the image to animate.</p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                <div id="buttons-area" class="btn-group-vertical">
-                        
-                </div>
-                <form class="form-inline">
-                        <div class="form-group mx-sm-3 mb-2">
-                        <input type="text" id="topic-input" class="form-control" placeholder="New animal">
-                        </div>
-                        <!-- Button that triggers new topic to be added -->
-                        
-                        <input id="add-topic" class="btn btn-primary mb-2" type="submit" value="Add an Animal">
-                        </form>
-              </div>
-              <div class="col-md-8">
-                 <div id="gif-area"></div>
-                    <!-- float right -->
-              </div>
-          </div>
-          
-
-       
-
-   
-
+        <div id="buttons-area"></div>
+        <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+                <input type="text" id="topic-input" class="form-control" placeholder="New Animal">
+            </div>
+            <!-- Button that triggers new topic to be added -->
+            <input id="add-topic" class="btn btn-primary mb-2" type="submit" value="Add Animal">
+        </form>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text-center">
+                <div id="gif-area"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
     <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>

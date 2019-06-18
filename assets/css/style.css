@@ -1,11 +1,38 @@
-#gif-area {
-    float: right;
+body {
+    background-color: black;
 }
 
+.jumbotron {
+    padding: 32px;
+}
+
+/* Buttons */
 .topic {
-    margin-bottom: 10px;
+    margin-right: 10px;  
 }
 
+.topic:hover {
+    background-color: purple;
+    border-color: purple;
+}
+#add-topic, .topic {
+    background-color: black;
+    border-color: black;
+}
+/* Input form */
+.form-inline {
+    margin: 20px auto;
+    width: 350px;
+}
+
+/* Text  */
 .sub-text {
     font-size: 18px;
+    color: white;
 }
+
+.giphy-img {
+    max-height: 350px;
+    width: 350px;
+}
+
